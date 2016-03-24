@@ -1,0 +1,50 @@
+.borde {
+    border: 1px solid black;
+}
+#contenedor {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -250px;
+}
+
+#contenedor1 {
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    margin-top: -25px;
+    margin-left: -200px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+h1, h2, h3,h4 {
+    font-family: 'Indie Flower', cursive !important;
+}
+#temp {
+    font-family: 'Indie Flower', cursive;
+    font-style: bold;
+    font-size: 60px;
+}
+#clima img {
+    width: 40px;
+    height: 40px;
+}
+#toc {
+    margin: 0 20px;
+}
+#tof {
+    opacity: 0.5;
+}
+.parr, label {
+    font-family: 'Architects Daughter', cursive ;
+    font-size: 16px;
+    color: black;
+}

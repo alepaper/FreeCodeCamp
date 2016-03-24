@@ -1,0 +1,41 @@
+.img-perfil {
+    height:350px !important;
+}
+h1, h2, h3,h4, address {
+    font-family: 'Indie Flower', cursive, bold !important;
+}
+.parr, label {
+    font-family: 'Architects Daughter', cursive ;
+    font-size: 16px;
+    color: black;
+}
+input::-webkit-input-placeholder {
+    font-family: 'Architects Daughter', cursive ;
+}
+input::-moz-placeholder {
+    font-family: 'Architects Daughter', cursive ;
+}
+dt {
+    font-size: 26px;
+}
+.amarillo {
+    background-color: yellow;
+}
+.verde {
+    background-color: #0FFD03;
+}
+footer {
+    background-color: #222222;
+    color: white;
+}
+.icono {
+    font-size: 50px;
+}
+div.carousel.slide{
+    width: 80%;
+    height: 60%;
+}
+.carousel-inner .item {
+
+    max-height: 550px;
+}

@@ -1,7 +1,22 @@
 .borde {
     border: 1px solid black;
 }
-#contenedor {
+h2, h3,h4, address {
+    font-family: 'Indie Flower', cursive, bold ;
+}
+h1 {
+    font-family: 'Indie Flower', cursive, bold ;
+    font-size: 60px;
+}
+.parr, label {
+    font-family: 'Architects Daughter', cursive ;
+    font-size: 16px;
+    color: black;
+}
+#icono {
+    font-size: 120px;
+}
+/*#contenedor {
     width: 500px;
     height: 200px;
     position: absolute;
@@ -24,12 +39,4 @@
     justify-content: center;
     align-content: center;
     flex-direction: column;
-}
-h1, h2, h3,h4, address {
-    font-family: 'Indie Flower', cursive, bold !important;
-}
-.parr, label {
-    font-family: 'Architects Daughter', cursive ;
-    font-size: 16px;
-    color: black;
-}
+}*/

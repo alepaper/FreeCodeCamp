@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="icon" href="#">
 
-    <!--<link rel="stylesheet" href="estilo.css">-->
-    <link rel="stylesheet" href="EstiloFrases.css">
-
     <!--Referencia a hoja de estilos-->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -29,33 +26,39 @@
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 
+    <link rel="stylesheet" href="EstiloFrases.css">
+
 </head>
 <body id="fondo">
-
-        <div id="contenedor" class="text-center">
+<div class="container text-center">
         <div class="row">
-             <div id="frasesaleatorias">
+            <h1>Frases Aleatorias</h1>
+            <h1><i id="icono" class="glyphicon glyphicon-comment"></i></h1>
+            <div id="frasesaleatorias">
             </div>
         </div>
+
         <br>
+
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col col-lg-3 col-lg-offset-3">
                 <button id="tweet" class="btn btn-lg btn-primary">
                     <h4><b><i class="fa fa-twitter fa-lg"></i> Tweet</b></h4>
                 </button>
             </div>
 
-            <div class="col-lg-4 col-lg-offset-4">
+            <div class="col col-lg-3 ">
                  <button id="next" class="btn btn-lg btn-success">
                     <h4><b>Nueva Frase</b></h4>
                 </button>
             </div>
         </div>
 
-        </div>
-        <div id="contenedor1" class="text-center">
+         <div class="row text-right">
             <h1><b>By Alepaper</b></h1>
         </div>
+
+</div>
 
 <script src="scriptFrases.js"></script>
 <script src="http://spreadsheets.google.com/feeds/list/0AtzEI6cl1Hv6dG9wMHpqcVdqbzJhZjlWQ1VScXFVSmc/od6/public/values?alt=json-in-script&callback=leer" type="text/javascript"></script>

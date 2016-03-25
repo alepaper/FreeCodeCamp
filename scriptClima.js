@@ -27,24 +27,8 @@ var geo_options = {
 
     function error(error) {
         alert("Imposible obtener su geolocalización debido a: "+error.code + " : " + error.message);
-        escribir(latitude,longitude);
+        $('#temp').html('<i class="pic wi wi-na"></i><h3>Imposible obtener su geolocalización</h3>');
     };
-  //       $.simpleWeather({
-  //   location: 'Austin, TX',
-    // woeid: '',http://uxrepo.com/static/icon-sets/windows/svg/thermometer-celcius.svg
-  //   unit: 'c',
-  //   success: function(weather) {
-  //     html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-  //     html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
-  //     html += '<li class="currently">'+weather.currently+'</li>';
-  //     html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
-
-  //     $("#clima").html(html);
-  //   },
-  //   error: function(error) {
-  //     $("#frasesaleatorias").html('<p>'+error+'</p>');
-  //   }
-  // });
 
     function escribir (lat, lon) {
         $.ajax({
@@ -59,6 +43,7 @@ var geo_options = {
         })
         .done(function(data) {
             temp=data.main.temp;
+            $('.title').append('<h3>' + data.name + ', ' + data.sys.country + '</h3>');
             $('#temp').html(' ' + temp.toFixed(2) + icon);
             $('#toc').prop("class","wi wi-celsius");
             $('#tof').prop("class","wi wi-fahrenheit");
@@ -69,7 +54,7 @@ var geo_options = {
             $('#pic2').append('<h3>Speed: ' + data.wind.speed + ' <i class="wi wi-wind-beaufort-'
                 + Math.round(data.wind.speed) + '"></i></h3>');
             $('#pic2').append('<h3>Direction: ' + data.wind.deg +
-             '&deg; <i class="wi wi-wind from-' + data.wind.deg +
+             '&deg; <i class="wi wi-wind towards-' + Math.round(data.wind.deg) +
              '-deg"></i></h3>');
 
         });
@@ -95,3 +80,20 @@ var geo_options = {
         $('#toc').on('click',cambio);
         $('#tof').on('click',cambio);
     });
+
+  //       $.simpleWeather({
+  //   location: 'Austin, TX',
+    // woeid: '',http://uxrepo.com/static/icon-sets/windows/svg/thermometer-celcius.svg
+  //   unit: 'c',
+  //   success: function(weather) {
+  //     html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+  //     html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+  //     html += '<li class="currently">'+weather.currently+'</li>';
+  //     html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
+
+  //     $("#clima").html(html);
+  //   },
+  //   error: function(error) {
+  //     $("#frasesaleatorias").html('<p>'+error+'</p>');
+  //   }
+  // });

@@ -1,30 +1,6 @@
 .borde {
     border: 1px solid black;
 }
-#contenedor {
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -300px;
-    margin-left: -300px;
-}
-
-#contenedor1 {
-    width: 400px;
-    height: 70px;
-    position: absolute;
-    top: 90%;
-    left: 90%;
-    margin-top: -35px;
-    margin-left: -200px;
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
 .title{
     font-size: 60px !important;
     font-family: 'Architects Daughter', cursive !important;
@@ -39,7 +15,7 @@ h1, h2, h3,h4 {
     font-size: 50px;
 }
 .pic {
-    font-size: 120px;
+    font-size: 100px;
 }
 #toc {
     margin: 0 20px;

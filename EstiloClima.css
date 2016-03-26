@@ -1,6 +1,9 @@
 .borde {
     border: 1px solid black;
 }
+body {
+    background-color: yellow;
+}
 .title{
     font-size: 60px !important;
     font-family: 'Architects Daughter', cursive !important;
@@ -27,6 +30,7 @@ h1, h2, h3,h4 {
 }
 .parr, label {
     font-family: 'Architects Daughter', cursive ;
-    font-size: 14px;
-    color: black;
+    font-size: 18px;
+    color: white;
+    font-style: bold;
 }

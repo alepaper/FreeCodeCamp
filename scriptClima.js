@@ -50,13 +50,17 @@ var geo_options = {
             $('#pic1').html('<i class="pic wi wi-owm-' + data.weather[0].id + '"></i>');
             $('#pic2').html('<i class="pic wi wi-windy"></i>');
             $('#pic1').append('<h2>' + data.weather[0].description + '</h2>');
+            $('#pic1').append('<br><button type="button" class="btn btn-success btn-lg parr"'
+                + ' data-toggle="modal" data-target="#map">Mapa</button>');
             $('#pic2').append('<h2>Wind</h2>');
             $('#pic2').append('<h3>Speed: ' + data.wind.speed + ' <i class="wi wi-wind-beaufort-'
                 + Math.round(data.wind.speed) + '"></i></h3>');
             $('#pic2').append('<h3>Direction: ' + data.wind.deg +
              '&deg; <i class="wi wi-wind towards-' + Math.round(data.wind.deg) +
              '-deg"></i></h3>');
-
+            $('#mapita').prop('src','https://maps.googleapis.com/maps/api/staticmap?'
+                + 'center=' + latitude + ',' + longitude
+                + '&zoom=14&size=500x400&key=AIzaSyA7-O2FvG_S3xrG24UOCVR-mQkHdwWrkrQ');
         });
     }
 

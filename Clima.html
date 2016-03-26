@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="icon" href="https://image.freepik.com/iconos-gratis/nube-rayo-de-sol_318-29896.jpg">
 
-    <!--<link rel="stylesheet" href="estilo.css">-->
-    <link rel="stylesheet" href="EstiloClima.css">
-
     <!--Referencia a hoja de estilos-->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -33,6 +30,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons-wind.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+
+    <!--<link rel="stylesheet" href="estilo.css">-->
+    <link rel="stylesheet" href="EstiloClima.css">
+
 </head>
 <body>
 <div class="container">
@@ -60,7 +61,23 @@
                 <h1><b>By Alepaper</b></h1>
     </div>
 
+    <div class="modal fade" id="map" tabindex="-1" role="dialog" aria-labelledby="Alepaper">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="Alepaper"><b>GEOLOCALIZACIÓN DEL CLIMA</b></h4>
+                </div>
+                <div class="modal-body text-center">
+                    <img alt="Mapa del clima" id="mapita">
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
+
 <script src="scriptClima.js"></script>
+
 </body>
 </html>
